@@ -2,7 +2,7 @@
 
 ## Demo
 
-Check the [Demo](https://marslan390.github.io/ByrdInvoiceCalculator/)
+Check the [Demo](https://marslan390.github.io/byrd_frontend/)
 
 ## Setup
 
