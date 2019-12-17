@@ -19,7 +19,7 @@ export class OrderComponent implements OnInit {
 
   getOrderDate = (date) => {
     if (date) {
-      date = new Date()
+      date = new Date(date);
       return `${date.getDate()}.${date.getMonth() + 1}.${date.getFullYear()}`;
     }
   }

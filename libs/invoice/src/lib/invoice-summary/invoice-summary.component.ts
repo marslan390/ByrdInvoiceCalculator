@@ -17,9 +17,9 @@ export class InvoiceSummaryComponent implements OnInit {
     this.invoiceSummary = this.fascad.getInvoiceSummary$;
   }
 
-  getFormatedDate = (date: Date) => {
+  getFormattedDate = (date: Date) => {
     if (date) {
-      date = new Date()
+      date = new Date(date);
       return `${date.getDate()}.${date.getMonth() + 1}.${date.getFullYear()}`;
     }
   }

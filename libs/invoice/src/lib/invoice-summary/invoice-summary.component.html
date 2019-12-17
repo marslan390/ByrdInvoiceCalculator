@@ -6,13 +6,13 @@
         <div class="start col">
           <span class="label">Start Date:</span>
           <span class="value">{{
-            getFormatedDate((invoiceSummary | async)?.dateRange?.startDate) || 'N/A'
+            getFormattedDate((invoiceSummary | async)?.dateRange?.startDate) || 'N/A'
           }}</span>
         </div>
         <div class="end col">
           <span class="label">End Date:</span>
           <span class="value">{{
-            getFormatedDate((invoiceSummary | async)?.dateRange?.endDate) || 'N/A'
+            getFormattedDate((invoiceSummary | async)?.dateRange?.endDate) || 'N/A'
           }}</span>
         </div>
         <div class="total-days col">
