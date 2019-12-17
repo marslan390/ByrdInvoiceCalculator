@@ -1,0 +1,13 @@
+<div class="customer-list">
+  <mat-form-field class="full-width">
+    <input type="text" placeholder="Customer" aria-label="String" matInput [matAutocomplete]="auto" [(ngModel)]="selected">
+    <mat-autocomplete #auto="matAutocomplete"
+                      [displayWith]="displayWith"
+                      (optionSelected)="onChange($event)"
+    >
+      <mat-option *ngFor="let customer of customers | async" [value]="customer">
+        {{customer.name}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</div>

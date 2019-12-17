@@ -1,0 +1,35 @@
+<div class="invoice-summary" *ngIf="invoiceSummary | async">
+  <mat-card>
+    <mat-card-title>Invoice Summary</mat-card-title>
+    <mat-card-content>
+      <div class="row date-range">
+        <div class="start col">
+          <span class="label">Start Date:</span>
+          <span class="value">{{
+            getFormatedDate((invoiceSummary | async)?.dateRange?.startDate) || 'N/A'
+          }}</span>
+        </div>
+        <div class="end col">
+          <span class="label">End Date:</span>
+          <span class="value">{{
+            getFormatedDate((invoiceSummary | async)?.dateRange?.endDate) || 'N/A'
+          }}</span>
+        </div>
+        <div class="total-days col">
+          <span class="label">Total Days:</span>
+          <span class="value">{{ (invoiceSummary | async)?.totalDays }}</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="orders col">
+          <span class="label">Numeber of Orders:</span>
+          <span class="value">{{ (invoiceSummary | async)?.orders }}</span>
+        </div>
+        <div class="total-amount col">
+          <span class="label">Total Amount:</span>
+          <span class="value">{{ (invoiceSummary | async)?.totalAmount }}</span>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

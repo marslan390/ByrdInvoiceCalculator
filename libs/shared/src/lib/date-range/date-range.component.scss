@@ -1,0 +1,12 @@
+:host {
+  width: 100%;
+}
+
+.date-range {
+  display: flex;
+  flex-direction: row;
+
+  .start-date {
+    padding-right: 15px;
+  }
+}

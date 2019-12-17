@@ -1,0 +1,23 @@
+<div class="invoice-filter">
+  <mat-card class="card">
+    <mat-card-title>Filters</mat-card-title>
+    <mat-card-content class="content">
+      <div class="customer-list">
+        <byrd-customer-list
+          [selected]="filters?.customer"
+          (changeCustomer)="onChangeCustomer($event)"
+        ></byrd-customer-list>
+      </div>
+      <div class="date-range">
+        <byrd-date-range
+          (dateRangeChange)="onDateRangeChange($event)"
+        ></byrd-date-range>
+      </div>
+      <div class="action">
+        <button mat-stroked-button color="primary" (click)="search()">
+          Search
+        </button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

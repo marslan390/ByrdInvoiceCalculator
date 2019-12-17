@@ -1,0 +1,22 @@
+:host {
+  width: 100%;
+}
+
+.invoice-filter {
+  .card {
+    .content {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      flex-direction: row;
+      justify-content: left;
+      .customer-list {
+        padding-right: 15px;
+      }
+
+      .action {
+        padding-left: 15px;
+      }
+    }
+  }
+}

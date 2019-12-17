@@ -13,6 +13,24 @@
     },
     "frontend": {
       "tags": []
+    },
+    "api": {
+      "tags": []
+    },
+    "shared": {
+      "tags": []
+    },
+    "invoice": {
+      "tags": []
+    },
+    "order-list": {
+      "tags": []
+    },
+    "customer-list": {
+      "tags": []
+    },
+    "order": {
+      "tags": []
     }
   }
 }

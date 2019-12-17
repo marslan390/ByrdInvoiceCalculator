@@ -1,0 +1,16 @@
+<div class="invoice">
+  <div class="row">
+    <byrd-invoice-filter
+      [filters]="(config | async)?.filters"
+      (dateRangeChange)="onDateRangeChange($event)"
+      (changeCustomer)="onChageCustomer($event)"
+      (searchOrders)="searchOrders()"
+    ></byrd-invoice-filter>
+  </div>
+  <div class="row">
+    <byrd-invoice-summary></byrd-invoice-summary>
+  </div>
+  <div class="row">
+    <byrd-order-list [orders]="orders | async"></byrd-order-list>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="order-list" *ngIf="orders.length > 0">
+  <mat-card>
+    <mat-card-title>Order List</mat-card-title>
+    <mat-card-content>
+      <byrd-order *ngFor="let order of orders" [order]="order"></byrd-order>
+    </mat-card-content>
+  </mat-card>
+</div>

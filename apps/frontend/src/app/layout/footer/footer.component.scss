@@ -1,0 +1,14 @@
+@import 'variables';
+
+:host {
+  width: 100%;
+}
+
+.footer {
+  p {
+    text-align: center;
+    background-color: $primary;
+    color: white;
+    padding: 2px;
+  }
+}

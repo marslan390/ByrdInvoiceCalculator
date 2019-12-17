@@ -1,0 +1,15 @@
+@import 'variables';
+:host {
+  width: 100%;
+}
+
+.header {
+  background-color: $primary;
+  color: white;
+  padding: 5px;
+
+  h3 {
+    text-align: center;
+    margin: 15px;
+  }
+}

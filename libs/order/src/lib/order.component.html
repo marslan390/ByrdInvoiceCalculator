@@ -1,0 +1,35 @@
+<div class="order">
+  <mat-card>
+    <div class="name row">
+      <span class="label">Name:</span>
+      <span class="value">{{order?.recipient?.name}}</span>
+    </div>
+    <div class="email row">
+      <span class="label">Email:</span>
+      <span class="value">{{order?.recipient?.email}}</span>
+    </div>
+    <div class="total-price row">
+      <span class="label">Total Price:</span>
+      <span class="value">
+        {{getTotalPrice(order?.items || [])}}
+        <span class="currency">{{getCurrency(order?.items || [])}}</span>
+      </span>
+    </div>
+    <div class="order-date row">
+      <span class="label">Order Date:</span>
+      <span class="value">{{getOrderDate(order?.created_at || null)}}</span>
+    </div>
+    <div class="order-items row">
+      <byrd-order-items [items]="order?.items || []"></byrd-order-items>
+    </div>
+    <div class="delivery-details row">
+      <span class="label">Delivery Details =></span>
+      <div class="detail">
+        <span class="label">Courier:</span>
+        <span class="value">{{order?.delivery?.courier}}</span>
+        <span class="label">Method: </span>
+        <span class="value">{{order?.delivery?.method}}</span>
+      </div>
+    </div>
+  </mat-card>
+</div>

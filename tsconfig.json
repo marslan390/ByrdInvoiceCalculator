@@ -15,7 +15,15 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@env/*": ["apps/frontend/src/environments/*"],
+      "@byrd/api": ["libs/api/src/index.ts"],
+      "@byrd/shared": ["libs/shared/src/index.ts"],
+      "@byrd/invoice": ["libs/invoice/src/index.ts"],
+      "@byrd/order-list": ["libs/order-list/src/index.ts"],
+      "@byrd/customer-list": ["libs/customer-list/src/index.ts"],
+      "@byrd/order": ["libs/order/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

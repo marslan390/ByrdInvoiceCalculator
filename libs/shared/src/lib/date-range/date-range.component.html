@@ -1,0 +1,24 @@
+<div class="date-range">
+  <mat-form-field class="start-date">
+    <input
+      matInput
+      [matDatepicker]="pickerStartDate"
+      placeholder="Start Date"
+      [value]="startDate"
+      (dateChange)="onRangeChangeDate($event, 'start')"
+    >
+    <mat-datepicker-toggle matSuffix [for]="pickerStartDate"></mat-datepicker-toggle>
+    <mat-datepicker #pickerStartDate></mat-datepicker>
+  </mat-form-field>
+  <mat-form-field class="end-date">
+    <input
+      matInput
+      [matDatepicker]="pickerEndDate"
+      placeholder="End Date"
+      [value]="endDate"
+      (dateChange)="onRangeChangeDate($event, 'end')"
+    >
+    <mat-datepicker-toggle matSuffix [for]="pickerEndDate"></mat-datepicker-toggle>
+    <mat-datepicker #pickerEndDate></mat-datepicker>
+  </mat-form-field>
+</div>

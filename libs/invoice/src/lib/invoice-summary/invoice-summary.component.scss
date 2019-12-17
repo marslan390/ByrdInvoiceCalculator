@@ -1,0 +1,26 @@
+$padding: 15px;
+:host {
+    width: 100%;
+}
+
+.invoice-summary {
+    .row {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3px 0;
+        .col {
+            display: inline-block;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+
+        .value {
+            padding-left: $padding;
+        }
+    }
+}
